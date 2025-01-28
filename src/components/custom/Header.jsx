@@ -67,11 +67,13 @@ const Header = () => {
           <Popover>
             <PopoverTrigger><img src={users?.picture} className='h-[35px] w-[35px] rounded-full cursor-pointer'/></PopoverTrigger>
             <PopoverContent>
+              <a href="/">
               <h2 className='text-center cursor-pointer' onClick={() => {
                 googleLogout();
                 localStorage.clear();
                 window.location.reload();
               }}>Logout</h2>
+              </a>
             </PopoverContent>
           </Popover>
 
